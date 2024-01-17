@@ -25,6 +25,7 @@ router.get("/customer", CarController.getCustomer);
 router.get("/dealerVehicle/:modelId", CarController.getDealerVehiclesByModel);
 router.get("/dealerVehicle-brand/:brandId", CarController.dealerVehiclesByBrandId);
 router.get("/dealerVehicle-pagination", CarController.getAllDealerVehiclesPagination);
+router.get("/get-dealer-vehicle-price-search", CarController.getDealerVehicleByPrice);
 router.get(
   "/dealerVehicles/:dealerId",
   CarController.getDealerVehiclesByDealerId
